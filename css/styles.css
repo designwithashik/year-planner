@@ -65,7 +65,7 @@ button {
 
 .sad-cat > img {
     height: auto;
-    width: 569px;
+    width: auto;
 }
 
 .list-box {
@@ -164,6 +164,7 @@ footer {
     margin-top: 130px;
     color: whitesmoke;
     margin-left: 230px;
+    margin-bottom: 130px;
 }
 
 .future > .desc {
