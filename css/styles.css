@@ -7,10 +7,21 @@
     font-family: 'Work Sans';
 }
 
+button {
+    background-color: whitesmoke;
+    border: none;
+    padding: 20px 25px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
 /* Contact Section Styles */
 
 .contact {
     background-image: url(../images/banners/banner3.png);
+    background-repeat: no-repeat;
+
     display: flex;
     overflow: auto;
 }
@@ -30,16 +41,14 @@
     color: #fff;
 }
 
-
-.contact-button > button {
+.contact-button {
+    color: #2c6fda;
     margin-top: 32px;
-    color: blue;
-    background-color: whitesmoke;
-    border: none;
-    padding: 20px 25px 20px;
-    border-radius: 5px;
-    font-size: 20px;
+    
 }
+
+
+
 
 /* Failure Section Styles */
 .failures {
@@ -111,3 +120,35 @@ li {
     margin-top: 25px;
     margin-bottom: 14px;
 }
+
+/* Call Section Styles */
+
+.call {
+    display: flex;
+    margin: 0 230px 130px;
+}
+
+.call-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../images/gradient1.png), url(../images/watch.png);
+    border-radius: 5px; 
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+.call-container > .title {
+    margin: 0 617px 24px 60px;
+    font-size: 30px;
+    color: #fff;
+
+}
+
+
+.call-button button {
+    color: #2c6fda;
+    margin-left: 60px;
+}
+
