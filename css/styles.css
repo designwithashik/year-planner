@@ -21,7 +21,7 @@
 }
 
 .big-text {
-    font-size: 65px;
+    font-size: 55px;
     margin-bottom: 24px;
     color: whitesmoke;
 }
@@ -38,4 +38,48 @@
     border: none;
     padding: 20px 25px 20px;
     border-radius: 5px;
+    font-size: 20px;
 }
+
+/* Failure Section Styles */
+.failures {
+    display: flex;
+    gap: 85px;
+    margin-top: 130px;
+    margin-left: 205px;
+    margin-right: 320px;
+    margin-bottom: 130px;
+    justify-content: center;
+
+}
+
+
+.sad-cat > img {
+    height: auto;
+    width: 569px;
+}
+
+.list-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fail-title {
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.fail-desc {
+    margin-bottom: 16px;
+}
+
+.fail-list > ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 8px;
+    width: 50vh;
+}
+
