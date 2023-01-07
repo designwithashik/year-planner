@@ -63,11 +63,6 @@ button {
 }
 
 
-.sad-cat > img {
-    height: auto;
-    width: auto;
-}
-
 .list-box {
     display: flex;
     flex-direction: column;
