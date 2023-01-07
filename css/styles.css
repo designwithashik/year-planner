@@ -61,7 +61,9 @@ button {
     justify-content: center;
 
 }
-
+.person {
+    background-image: url(../images/person.png);
+}
 
 .list-box {
     display: flex;
