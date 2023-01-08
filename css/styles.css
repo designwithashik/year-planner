@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Sevillana&family=Work+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Sevillana&family=Work+Sans:wght@300;400;600;700;800;900&display=swap');
 
 
 * {
@@ -13,7 +13,7 @@ button {
     padding: 20px 25px 20px;
     border-radius: 5px;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* Contact Section Styles */
@@ -61,8 +61,9 @@ button {
     justify-content: center;
 
 }
-.person {
-    background-image: url(../images/person.png);
+.sad-cat > img {
+    width: auto;
+    height: 720px;
 }
 
 .list-box {
@@ -78,14 +79,21 @@ button {
 
 .fail-desc {
     margin-bottom: 16px;
+    color: rgb(118, 114, 114);
+
 }
 
 .fail-list > ul {
     list-style: none;
+    color: rgb(118, 114, 114);
 }
 
-li {
-    margin-bottom: 8px;
+.fail-list i {
+    color: #1a8ce3;
+}
+
+.fail-list li {
+    margin-bottom: 12px;
     width: 50vh;
 }
 
@@ -118,19 +126,116 @@ li {
     margin-bottom: 14px;
 }
 
+/* New Plan Section Style */
+
+.new-plan {
+    background: linear-gradient( 
+        #2c6fda,
+        #fff
+);    
+    margin: 0px 230px 130px;
+    border-radius: 10px;
+    max-height: 300px;
+    justify-content: center;
+    overflow: visible;
+    box-shadow: 2px 2px 10px #2c6fda;
+
+
+}
+
+.new-plan > .container {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 60px;
+    gap: 50px;
+    justify-content: center;
+
+
+
+
+}
+
+.new-plan .title {
+    font-size:60px;
+    color: #fff;
+    padding-left: 40px;
+
+}
+
+.new-plan .form {
+    background-color: #1a8ce3;
+    border-radius: 20px;
+    box-shadow: 0 7px 7px 2px rgba(53, 46, 46, 0.358);
+}
+
+.form > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 70px;
+    
+}
+
+.new-plan input {
+    padding: 21px 100px 5px 0px;
+    border: none;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    background: transparent;
+    transition: 0.5s;
+}
+
+.new-plan .icon-file{
+    
+    display: none;
+}
+
+
+.new-plan label {
+    background: 0;
+    border-radius: 5px;
+    color: rgb(245, 240, 240);
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid rgb(245, 240, 240) ;
+    
+}
+
+.icon-file::placeholder {
+    color: #fff;
+}
+.new-plan button {
+    color: #2c6fda;
+    margin: 15px;
+}
+
+.new-plan  input::placeholder {
+    color: rgb(245, 240, 240);
+    font-size: 20px;
+}
+
+.new-plan input:focus {
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+}
+
 /* Call Section Styles */
 
 .call {
     display: flex;
-    margin: 0 230px 130px;
+    margin: 0px 230px 130px;
 }
 
 .call-container {
+    margin-top: 130px;
     display: flex;
     width: 100vw;
     justify-content: center;
     flex-direction: column;
-    background-image: url(../images/gradient1.png), url(../images/watch.png);
+    background-image: linear-gradient(to right, rgba(44, 111, 218, 0.8), rgba(255, 255, 255, 0.4)), url(../images/watch.png);
     border-radius: 5px; 
     height: 300px;
     background-repeat: no-repeat;
@@ -149,19 +254,29 @@ li {
     margin-left: 60px;
 }
 
+
 /* Footer Styles */
 
 footer {
-    display: flex;
     background-color: #333;
-    gap: 330px;
+
+    
 }
 
+footer > .container {
+
+    display: flex;
+    gap: 330px;
+    padding: 130px 230px;
+}
+
+
 .future {
-    margin-top: 130px;
     color: whitesmoke;
-    margin-left: 230px;
-    margin-bottom: 130px;
+}
+
+.future > .title {
+    font-size: 45px;
 }
 
 .future > .desc {
@@ -181,21 +296,24 @@ footer {
 
 
 .subscribe {
-    margin-top: 130px;
     color: whitesmoke;
-    margin-right: 230px;
 }
 
+.subscribe > .title {
+    font-size: 25px;
+    font-weight: 600;
+}
 .subscribe input {
     background: transparent;
     border-radius: 5px;
     border-color: whitesmoke;
-    padding: 21px 21px 21px 21px;
+    padding: 21px 100px 21px 21px;
     margin: 30px 0 16px;
 }
 
 .subscribe button {
-    color: #2c6fda;
+    color: #fff;
+    background-color: #2c6fda;
 }
 
 .subscribe input::placeholder {
